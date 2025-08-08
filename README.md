@@ -50,7 +50,7 @@ CleanPlay: Skip Unwanted Scenes Automatically A smart video player that automati
 
 
 An open-source, community-driven video player that skips inappropriate content
-
+[![Discussions](https://img.shields.io/badge/Join-Discussions-royalblue?logo=github)](https://github.com/lemavodo/CleanPlay/discussions)
 [![Contributors Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?logo=git)](https://github.com/lemavodo/CleanPlay/pulls)
 [![License](https://img.shields.io/badge/License-MIT-purple)](https://github.com/lemavodo/CleanPlay/blob/main/LICENSE)
 [![Stage](https://img.shields.io/badge/Status-Idea%20Phase-yellow)](https://github.com/lemavodo/CleanPlay)
