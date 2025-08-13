@@ -111,9 +111,9 @@ Immediate Goals:
   
   Join Discussions
   
-  Claim a task
+  Claim a task 
   
-  Developers: Check "Good First Issues"
+  Developers: Check "Good First Issues" [![GitHub issues](https://img.shields.io/github/issues/lemavodo/CleanPlay?color=red)](https://github.com/lemavodo/CleanPlay/issues)
   
   Designers: Submit mockups in Figma/XD
   
