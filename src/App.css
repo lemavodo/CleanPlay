@@ -187,3 +187,14 @@ body {
   background: #6c63ff;
   color: white;
 }
+.contrib-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #6c63ff;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.contrib-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,204 @@
+.contrib-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 30px 20px 80px;
+}
+
+/* ── Hero ── */
+.contrib-hero {
+  text-align: center;
+  padding: 40px 0 50px;
+  border-bottom: 1px solid #2a2a35;
+  margin-bottom: 50px;
+}
+
+.contrib-hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.contrib-subtitle {
+  color: #888;
+  font-size: 1rem;
+  max-width: 580px;
+  margin: 0 auto 28px;
+  line-height: 1.7;
+}
+
+.contrib-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-github {
+  background: #f0f0f0;
+  color: #0f0f13;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-github:hover { background: #ffffff; }
+
+.btn-issues {
+  background: transparent;
+  border: 1px solid #2a2a35;
+  color: #aaa;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-issues:hover {
+  border-color: #6c63ff;
+  color: #f0f0f0;
+}
+
+/* ── Sections ── */
+.contrib-section {
+  margin-bottom: 50px;
+}
+
+.contrib-section h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+/* ── How to contribute steps ── */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.step-card {
+  background: #1a1a24;
+  border: 1px solid #2a2a35;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.step-number {
+  width: 32px;
+  height: 32px;
+  background: #6c63ff;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.step-card h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin-bottom: 6px;
+}
+
+.step-card p {
+  color: #666;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* ── Issues ── */
+.issues-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.issue-card {
+  background: #1a1a24;
+  border: 1px solid #2a2a35;
+  border-radius: 12px;
+  padding: 20px;
+  transition: border-color 0.2s;
+}
+
+.issue-card:hover {
+  border-color: #6c63ff;
+}
+
+.issue-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.issue-number {
+  color: #555;
+  font-size: 0.85rem;
+  font-family: monospace;
+}
+
+.issue-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  flex: 1;
+}
+
+.difficulty {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.diff-easy   { background: #1e2d1a; color: #88cc66; }
+.diff-medium { background: #2d2210; color: #ffaa44; }
+.diff-hard   { background: #2d1010; color: #ff6b6b; }
+
+.issue-description {
+  color: #888;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.issue-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-tag {
+  background: #2a2a35;
+  color: #aaa;
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+/* ── Footer ── */
+.contrib-footer {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid #2a2a35;
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+.contrib-thank {
+  color: #444;
+  font-size: 0.85rem;
+}

@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import MoviePage from './MoviePage';
 import { supabase } from './supabaseClient';
 import './App.css';
+import ContributorsPage from './ContributorsPage';
 
 function App() {
   // These are like variables that React watches for changes
@@ -46,6 +47,7 @@ function App() {
       <header className="header">
         <h1 className="logo">🎬 CleanPlay</h1>
         <p className="tagline">Find out what's in a movie before you watch it</p>
+        <a href="/contribute" className="contrib-link">Contributors wanted →</a>
       </header>
 
       {/* ── Search bar ── */}
@@ -130,8 +132,9 @@ function Root() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+       <Route path="/" element={<App />} />
         <Route path="/movie/:id" element={<MoviePage />} />
+        <Route path="/contribute" element={<ContributorsPage />} />
       </Routes>
     </BrowserRouter>
   );
