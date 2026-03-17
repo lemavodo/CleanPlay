@@ -1,0 +1,247 @@
+/* ── Loading / error state ── */
+.page-loading {
+  text-align: center;
+  padding: 100px 20px;
+  color: #888;
+}
+
+/* ── Page layout ── */
+.movie-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px 80px;
+}
+
+/* ── Back button ── */
+.back-button {
+  background: none;
+  border: 1px solid #2a2a35;
+  color: #888;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.back-button:hover {
+  color: #f0f0f0;
+  border-color: #555;
+}
+
+/* ── Movie header ── */
+.movie-header {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 36px;
+  align-items: flex-start;
+}
+
+.detail-poster {
+  width: 140px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.detail-poster-placeholder {
+  width: 140px;
+  height: 210px;
+  background: #1a1a24;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+.movie-header-info {
+  flex: 1;
+}
+
+.detail-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.detail-year {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.no-scenes {
+  color: #555;
+  font-size: 0.95rem;
+  margin-top: 16px;
+}
+
+/* ── Summary badges ── */
+.summary-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ── Category badges ── */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badge-violence  { background: #3d1a1a; color: #ff6b6b; }
+.badge-nudity    { background: #3d2a1a; color: #ffaa5c; }
+.badge-profanity { background: #2a2a1a; color: #f0d060; }
+.badge-gore      { background: #2d1a2d; color: #cc77ee; }
+.badge-drugs     { background: #1a2d2a; color: #55ddaa; }
+
+/* ── Filter bar ── */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.filter-label {
+  color: #666;
+  font-size: 0.85rem;
+  margin-right: 4px;
+}
+
+.filter-btn {
+  background: #1a1a24;
+  border: 1px solid #2a2a35;
+  color: #888;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  border-color: #6c63ff;
+  color: #f0f0f0;
+}
+
+.filter-btn.active {
+  background: #6c63ff;
+  border-color: #6c63ff;
+  color: white;
+}
+
+/* ── Table ── */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.scenes-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.scenes-table thead tr {
+  border-bottom: 1px solid #2a2a35;
+}
+
+.scenes-table th {
+  text-align: left;
+  padding: 10px 14px;
+  color: #555;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.scenes-table tbody tr {
+  border-bottom: 1px solid #1e1e28;
+  transition: background 0.15s;
+}
+
+.scenes-table tbody tr:hover {
+  background: #1a1a24;
+}
+
+.scenes-table td {
+  padding: 14px;
+  vertical-align: top;
+  color: #ccc;
+}
+
+/* ── Table cell types ── */
+.td-time {
+  white-space: nowrap;
+  min-width: 140px;
+}
+
+.time-range {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.episode-tag {
+  display: block;
+  font-size: 0.75rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+.td-category {
+  white-space: nowrap;
+}
+
+.td-severity {
+  white-space: nowrap;
+}
+
+/* ── Severity text ── */
+.severity {
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.severity-mild     { color: #88cc66; }
+.severity-moderate { color: #ffaa44; }
+.severity-severe   { color: #ff5555; }
+
+.td-description {
+  color: #aaa;
+  line-height: 1.5;
+}
+/* ── Top bar with back + suggest buttons ── */
+.page-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.suggest-button {
+  background: #6c63ff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.suggest-button:hover {
+  background: #5a52e0;
+}

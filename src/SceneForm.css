@@ -1,0 +1,221 @@
+/* ── Overlay ── */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+/* ── Modal box ── */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+  background: #16161e;
+  border: 1px solid #2a2a35;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Modal header ── */
+.modal-header {
+  padding: 24px 24px 16px;
+  border-bottom: 1px solid #2a2a35;
+  position: relative;
+}
+
+.modal-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f0f0f0;
+}
+
+.modal-subtitle {
+  color: #666;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.modal-close:hover {
+  color: #f0f0f0;
+  background: #2a2a35;
+}
+
+/* ── Modal body ── */
+.modal-body {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Fields ── */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.required {
+  color: #ff6b6b;
+}
+
+.field-hint {
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: -4px;
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* ── Inputs ── */
+.field input,
+.field select,
+.field textarea {
+  background: #1a1a24;
+  border: 1px solid #2a2a35;
+  border-radius: 8px;
+  color: #f0f0f0;
+  font-size: 0.9rem;
+  padding: 10px 12px;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+  width: 100%;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: #6c63ff;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #444;
+}
+
+.field select option {
+  background: #1a1a24;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 80px;
+  line-height: 1.5;
+}
+
+/* ── Severity toggle buttons ── */
+.severity-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.severity-btn {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #2a2a35;
+  background: #1a1a24;
+  transition: all 0.15s;
+}
+
+.severity-btn-mild     { color: #88cc66; }
+.severity-btn-moderate { color: #ffaa44; }
+.severity-btn-severe   { color: #ff5555; }
+
+.severity-btn-mild.active     { background: #1e2d1a; border-color: #88cc66; }
+.severity-btn-moderate.active { background: #2d2210; border-color: #ffaa44; }
+.severity-btn-severe.active   { background: #2d1010; border-color: #ff5555; }
+
+/* ── Error message ── */
+.form-error {
+  background: #2d1010;
+  border: 1px solid #ff5555;
+  color: #ff8888;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+}
+
+/* ── Modal footer ── */
+.modal-footer {
+  padding: 16px 24px 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  border-top: 1px solid #2a2a35;
+}
+
+.btn-cancel {
+  background: none;
+  border: 1px solid #2a2a35;
+  color: #888;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.btn-cancel:hover {
+  border-color: #555;
+  color: #f0f0f0;
+}
+
+.btn-submit {
+  background: #6c63ff;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-submit:hover {
+  background: #5a52e0;
+}
+
+.btn-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

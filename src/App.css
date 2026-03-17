@@ -1,0 +1,189 @@
+/* ── Reset & base ── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #0f0f13;
+  color: #f0f0f0;
+  min-height: 100vh;
+}
+
+/* ── Layout ── */
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+/* ── Header ── */
+.header {
+  text-align: center;
+  padding: 60px 0 40px;
+}
+
+.logo {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -1px;
+}
+
+.tagline {
+  margin-top: 10px;
+  color: #888;
+  font-size: 1.05rem;
+}
+
+/* ── Search box ── */
+.search-box {
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 14px 20px;
+  font-size: 1rem;
+  border: 2px solid #2a2a35;
+  border-radius: 10px;
+  background: #1a1a24;
+  color: #f0f0f0;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: #6c63ff;
+}
+
+.search-input::placeholder {
+  color: #555;
+}
+
+.search-button {
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.search-button:hover {
+  background: #5a52e0;
+}
+
+.search-button:active {
+  transform: scale(0.97);
+}
+
+/* ── Status messages ── */
+.status-message {
+  text-align: center;
+  color: #888;
+  font-size: 1rem;
+  margin-top: 60px;
+  line-height: 1.8;
+}
+
+.hint {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* ── Placeholder (before first search) ── */
+.placeholder {
+  text-align: center;
+  margin-top: 80px;
+  color: #555;
+}
+
+.placeholder-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.placeholder p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+/* ── Movie grid ── */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.movie-card {
+  background: #1a1a24;
+  border: 1px solid #2a2a35;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+  border-color: #6c63ff;
+}
+
+.movie-poster {
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+}
+
+.movie-poster-placeholder {
+  width: 100%;
+  aspect-ratio: 2/3;
+  background: #2a2a35;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.movie-info {
+  padding: 14px;
+}
+
+.movie-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.movie-year {
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.view-button {
+  width: 100%;
+  padding: 8px;
+  background: transparent;
+  border: 1px solid #6c63ff;
+  color: #6c63ff;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.view-button:hover {
+  background: #6c63ff;
+  color: white;
+}
