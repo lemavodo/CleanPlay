@@ -30,7 +30,7 @@ An open-source, community-driven video player that skips inappropriate content D
 
 But no tool works across Netflix, local files, and smart TVs.
 
-🚀 Vision Platform Status
+🚀 Vision Platform Status -
 Browser Extension Idea
 Smart TV Apps Idea
 VLC/Kodi Plugins Idea
